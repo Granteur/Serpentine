@@ -45,5 +45,12 @@ class Snake:
         snake_segment.goto(position)
         self.segments.append(snake_segment)
     
+    def reset(self):
+        for segments in self.segments:
+            segments.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def shed_skin(self): #each time food is eaten, snake grows longer
         self.grow(self.segments[-1].position())

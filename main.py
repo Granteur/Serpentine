@@ -39,16 +39,16 @@ while game_is_on:
     
     #detect collision with edge
     if snake.head.xcor() > edge or snake.head.ycor() > edge or snake.head.xcor() < negative_edge or snake.head.ycor() < negative_edge:
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
     
     #detect collision 'self'
     for segment in snake.segments:
         if segment == snake.head:
             pass
         elif snake.head.distance(segment) < 5:
-            game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
 
 
 

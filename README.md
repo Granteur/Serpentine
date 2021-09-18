@@ -8,6 +8,6 @@ The game uses the arrow keys on the keyboard to maneuver a snake around a field 
 ![screenshot](assets/images/serpentine_screen.png)
 
 ## Roadmap
--Add a storage ability along to keep track of player's  highscores
+-Add a storage ability along to keep track of player's  highscores (Done Sept 18, 2021)
 -Add sound effects
 -Further design the background
